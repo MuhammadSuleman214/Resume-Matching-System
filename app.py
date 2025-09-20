@@ -81,11 +81,18 @@ def input_pdf_setup(uploaded_file):
                 st.info("📄 No direct text found, using OCR...")
 
                 # Poppler path (Linux mai zarurat nahi, Windows ke liye rakhna hoga)
-                poppler_path = None
+                # poppler_path = None
+                 #if os.name == "nt":  # Windows
+                     #poppler_path = r"C:\games\ML\poppler-25.07.0\Library\bin"
+
+                # images = pdf2image.convert_from_path(temp_path, poppler_path=poppler_path)
                 if os.name == "nt":  # Windows
                     poppler_path = r"C:\games\ML\poppler-25.07.0\Library\bin"
+                else:  # Linux/Streamlit Cloud
+                    poppler_path = None
 
                 images = pdf2image.convert_from_path(temp_path, poppler_path=poppler_path)
+
                 first_page = images[0]
                 extracted_text = pytesseract.image_to_string(first_page)
 
