@@ -1,0 +1,10 @@
+streamlit
+groq
+python-dotenv
+pillow
+pymupdf
+pdfplumber
+pdf2image
+pytesseract
+tesseract-ocr
+poppler-utils
