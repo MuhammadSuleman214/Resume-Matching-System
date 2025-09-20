@@ -111,7 +111,7 @@ def input_pdf_setup(uploaded_file):
 
 
 # ---------------- Streamlit App ----------------
-st.set_page_config(page_title="ATS Resume Expert")
+st.set_page_config(page_title="Resume Matching System")
 st.header("Resume Matching System")
 
 
