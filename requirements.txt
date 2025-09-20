@@ -6,5 +6,3 @@ pymupdf
 pdfplumber
 pdf2image
 pytesseract
-tesseract-ocr
-poppler-utils
