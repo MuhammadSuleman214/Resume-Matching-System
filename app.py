@@ -46,7 +46,7 @@ def get_groq_response(input_text, pdf_content, prompt):
         """
 
         response = client.chat.completions.create(
-            model="llama-3.3-70b-versatile",
+            model="openai/gpt-oss-120b",
             messages=[
                 {"role": "system",
                  "content": "You are an experienced Technical Human Resource Manager and ATS expert."},
